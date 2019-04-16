@@ -1,0 +1,22 @@
+<nb-card size="large">
+  <nb-tabset fullWidth (changeTab)="changeTab($event)">
+    <nb-tab tabTitle="Temperature Compensation Panel">
+      <div class="chart-container">
+        <ngx-chart-panel-summary [summary]="chartPanelSummary"></ngx-chart-panel-summary>
+        <!--<ngx-chart-panel-header [type]="period"-->
+                                <!--(periodChange)="setPeriodAndGetChartData($event)">-->
+        <!--</ngx-chart-panel-header>-->
+        <ngx-temperature-chart #temperatureChart [temperatureChartData]="temperatureChartData"></ngx-temperature-chart>
+      </div>
+    </nb-tab>
+    <nb-tab tabTitle="Weight" [lazyLoad]="true">
+      <div class="chart-container">
+        <ngx-chart-panel-summary [summary]="chartPanelSummary"></ngx-chart-panel-summary>
+        <!--<ngx-chart-panel-header [type]="period"-->
+                                <!--(periodChange)="setPeriodAndGetChartData($event)">
+        </ngx-chart-panel-header>-->
+        <ngx-weight-chart #weightChart [weightChartData]="weightChartData"></ngx-weight-chart>
+      </div>
+    </nb-tab>
+  </nb-tabset>
+</nb-card>
