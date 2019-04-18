@@ -37,6 +37,16 @@ from the root dir of the project run the following build command.
 `docker run -d -p 80:80 --env BACKEND_API_URL=beelogger-admin --env DEFAULT_LANGUAGE=de beelogger-admin`
 
 
+## the frontend
+
+An example of hive details. it shows environmental sensor metrics. 
+ 
+![The Beeball Details page](images/BeeBallDetails1.png)
+
+The follwoing example shows the sensor metrics which belongs to the IoT device, like energy consumption and such
+
+![the IoT metrics of the external data collector](images/BeeBallIoT1.png)
+
 # Test
 
 # the whole plattform
