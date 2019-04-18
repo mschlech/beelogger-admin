@@ -7,8 +7,9 @@
 
 ### Adminstration Platform 
 
-#### place
-<a target="_blank" href="http://github.com/mschlech/beelogger-admin/" <img src="https://github.com/mschlech/beelogger-admin/images/index.png"/></a>
+#### The Bee Hive Adminisration Frontend
+
+![BeeBall Admin the search box](images/BeeBallSearchScreen.png)
 
 ### Installation:
 
@@ -19,7 +20,6 @@
 
 ### installation procedure for node
 
-<a target="_blank" href="http://"><img src="https://github.com/mschlech/beelogger-admin/images/test.gif"/></a>
 
 ### check out beelogger admin
 
