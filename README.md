@@ -25,9 +25,21 @@
 
 <a target="_blank" href="http://github.com/mschlech/beelogger-admin">beelogger-admin</a>
 
-## test
+# Docker build 
+The following steps should setup an easy to use Docker image. Precondition : install Docker on your host 
 
-## the whole plattform
+## to build the docker image
+from the root dir of the project run the following build command.
+
+`docker build -f src/Dockerfile -t beelogger-admin .` 
+
+## to start the image
+`docker run -d -p 80:80 --env BACKEND_API_URL=beelogger-admin --env DEFAULT_LANGUAGE=de beelogger-admin`
+
+
+# Test
+
+# the whole plattform
 
 - [beelogger iot arduino stack](https://github.com/mschlech/beelogger-iot-arduino) - the firmware to be deployed on the arduino
 - [beelogger REST API Backend](https://github.com/mschlech/beelogger-rest-api) - the api backend 
