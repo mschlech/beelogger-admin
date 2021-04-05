@@ -31,10 +31,15 @@ The following steps should setup an easy to use Docker image. Precondition : ins
 ## to build the docker image
 from the root dir of the project run the following build command.
 
-`docker build -f src/Dockerfile -t beelogger-admin .` 
+`docker build -f Dockerfile -t beelogger-admin .` 
 
 ## to start the image
 `docker run -d -p 80:80 --env BACKEND_API_URL=beelogger-admin --env DEFAULT_LANGUAGE=de beelogger-admin`
+
+### Kubernetes setup
+```kubectl apply -f BeeLogger-Deployment.yaml```
+
+```kubeclt apply -f BeeLogger-load-balancer-service.yaml```
 
 
 ## the frontend
@@ -56,3 +61,5 @@ The follwoing example shows the sensor metrics which belongs to the IoT device, 
 - [beelogger eai gatway](https://github.com/mschlech/beelogger-gateway)
 ### base idea?
 - Beelogger IOT based on the beelogger.de project [beelogger.de](http://beelogger.de)
+
+### basic ops activities
